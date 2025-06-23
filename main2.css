@@ -1,0 +1,65 @@
+
+/* テーブルの装飾 */
+table {
+  /* 電卓のサイズ */
+  width: 300px;
+  height: 400px;
+  /* インライン要素を中央に配置 */
+  text-align: center;
+  /* 余白調整 */
+  padding: 8px;
+  margin: 20px;
+}
+
+
+input {
+  /* ボタンのサイズ */
+  width: 180px;
+  height: 70px;
+  /* ボタンの文字サイズ */
+  font-size: x-large;
+  /* 数字部分の背景色 */
+  background-color: #dcdcdca4;
+  /* ボタンの詳細設定 */
+  border: none;
+  border-radius: 20px;
+  /* クリック時の黒枠を消す */
+  outline: none;
+}
+
+/* ディスプレイの詳細設定 */
+.display {
+  width: 720px;
+  text-align: right; /* 文字を右詰めに */
+  /* 見た目の詳細設定 */
+  background: #000000;
+  border-top:  #dcdcdca4 5px;
+  border-bottom:  #dcdcdc00 5px;
+  border-right:  #b6b6b6 6px;
+  border-left:  #b6b6b6 6px;
+  border-radius: 5px;
+}
+/* 演算子の背景色を上書きで設定 */
+.operator {
+  background-color: #71c5fc;
+}
+/* 記号＝の部分の背景色を上書きで設定 */
+.equal {
+  background-color: #b6b6b6;
+}
+
+
+.display:hover {
+  background: #ffffff;
+}
+.operator:hover {
+  background: #339cdd;
+}
+
+/* クリック時に色を濃くする */
+input:active {
+  outline:  #5a5a5a;
+}
+.operator:active {
+  background: #2c80b4;
+}

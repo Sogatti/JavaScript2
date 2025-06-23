@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <link rel="stylesheet"href="main2.css">
+    <meta charset="utf-8">
+
+    <title>dentaku</title>
+  </head>
+  <body>
+    <form name="dentaku">
+      <table><!-- 表示部分 -->
+         <tr>
+          <td colspan="4">
+            <input type="text" class="display" name="display" value=""disabled>
+          </td>
+         </tr>
+         <!--上から１行目-->
+         <tr>
+          <td><input type="button" value="7" onclick="get_calc(this)"></td>
+          <td><input type="button" value="8" onclick="get_calc(this)"></td><td><input type="button" value="9" onclick="get_calc(this)"></td>
+          <td><input type="button" value="+" class="operator" name="div_btn" onclick="get_calc(this)"></td>
+         </tr>
+         <!--上から２行目-->
+         <tr>
+          <td><input type="button" value="4" onclick="get_calc(this)"></td>
+          <td><input type="button" value="5" onclick="get_calc(this)"></td><td><input type="button" value="6" onclick="get_calc(this)"></td>
+          <td><input type="button" value="-" class="operator" name="multi_btn" onclick="get_calc(this)"></td>
+         </tr>
+         <!--上から３行目-->
+         <tr>
+          <td><input type="button" value="1" onclick="get_calc(this)"></td>
+          <td><input type="button" value="2" onclick="get_calc(this)"></td><td><input type="button" value="3" onclick="get_calc(this)"></td>
+          <td><input type="button" value="×" class="operator" onclick="get_calc(this)"></td>
+         </tr>
+         <!--上から４段目-->
+         <tr>
+          <td><input type="button" value="0" onclick="get_calc(this)"></td>
+          <td><input type="button" value="00" onclick="get_calc(this)"></td><td><input type="button" value="." onclick="get_calc(this)"></td>
+          <td><input type="button" value="÷" class="operator" onclick="get_calc(this)"></td>
+         </tr>
+         <!--上から５段目-->
+         <tr>
+          <td><input type="button" value="AC" onclick="get_calc(this)"></td>
+          <td><input type="button" value="=" onclick="get_calc(this)"></td>
+         <script src="main2.js"></script>
+      </table>
+    </form>
+  </body>
+</html>
